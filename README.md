@@ -26,8 +26,8 @@
     
 ## Case Study
   - ### Description
-  - 표윤석, 조한철, 정려운, 임태훈(2017, 11), “ROS 개발환경 구축”,「ROS 로봇 프로그래밍」, 루비페이퍼
-  - Alexey Spizhevoy, Aleksandr Rynnikov(2018, 3), “Multiple View Geometry”, 「Opencv 3 Computer Vision with Python Cookbook」, Packt Publishing
+    - 표윤석, 조한철, 정려운, 임태훈(2017, 11), “ROS 개발환경 구축”,「ROS 로봇 프로그래밍」, 루비페이퍼
+    - Alexey Spizhevoy, Aleksandr Rynnikov(2018, 3), “Multiple View Geometry”, 「Opencv 3 Computer Vision with Python Cookbook」, Packt Publishing
   
 ## Conclusion
   - ### OOO
