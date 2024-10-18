@@ -29,7 +29,8 @@
     - Dependency Package : Opencv 4.10.0(Cmake installation required), librealsense SDK, ROS Noetic
    
 ## 로봇 하드웨어 구성
-  - ![image](https://github.com/user-attachments/assets/18b73962-f9ee-4911-bbff-e7cfdc65dd8b)
+   ![image](https://github.com/user-attachments/assets/18b73962-f9ee-4911-bbff-e7cfdc65dd8b)
+   ![image](https://github.com/user-attachments/assets/907fc4cf-6839-46f7-b7f8-67d89534f16a)
 
     
 ## Case Study
