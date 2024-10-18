@@ -27,6 +27,10 @@
     - OS : Ubuntu 20.04(Jetpack SDK 5.1.1)
     - Program Language : Python(>= 3.8.0)
     - Dependency Package : Opencv 4.10.0(Cmake installation required), librealsense SDK, ROS Noetic
+   
+## 로봇 하드웨어 구성
+  - ![image](https://github.com/user-attachments/assets/18b73962-f9ee-4911-bbff-e7cfdc65dd8b)
+
     
 ## Case Study
   - ### Description
