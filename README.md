@@ -68,6 +68,7 @@
 3. **백엔드 - 자바 스프링**  
    - 로봇과의 통신을 담당하며, 어플리케이션과 연동하여 명령을 주고받는 구조로 설계되었습니다.
    - Java Spring Framework를 이용해 안정적이고 확장 가능한 시스템을 구축했습니다.
+   - 캡스톤 백엔드 서버 레포지토리는 [여기](https://github.com/HBNU-SWUNIV/come-capstone24-Triplewave-Server)에서 볼 수 있습니다.
 
 ---
 
@@ -79,8 +80,6 @@
 
 ## **📈 프로젝트 성과**
 ![image](https://github.com/user-attachments/assets/5ee40cd6-0dc0-47fd-aa3d-bc12b34a0743)
-
-- **캡스톤 백엔드 서버 레포지토리는 [여기](https://github.com/HBNU-SWUNIV/come-capstone24-Triplewave-Server)에서 볼 수 있습니다.**
 
 
 1. **2024 SW중심대학 우수작품 경진대회** 참가
