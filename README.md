@@ -47,6 +47,15 @@
 
 ---
 
+## **🤖 ROS와 서버와의 통신 구조**
+- rosbridge를 이용한 ROS와 외부 서버 통신. 
+![image](https://github.com/user-attachments/assets/d008b8b6-961e-41d5-95c7-05bbc05173c9)
+
+
+## **📚 전체적인 시나리오**
+![image](https://github.com/user-attachments/assets/1bf57c20-2e0c-4cde-a540-c02f6cd528df)
+
+
 ## **🧩 코드 구성**
 1. **임베디드 시스템 - 로봇 제어**  
    - Jetson Orin Nano와 OpenCR을 활용하여 로봇의 이동 및 제어를 수행합니다.
@@ -69,6 +78,8 @@
 ---
 
 ## **📈 프로젝트 성과**
+![image](https://github.com/user-attachments/assets/5ee40cd6-0dc0-47fd-aa3d-bc12b34a0743)
+
 1. **2024 SW중심대학 우수작품 경진대회** 참가
 2. **대한전자공학회 2024년도 추계학술대회 Autumn Annual Conference of IEIE, 2024**
 
