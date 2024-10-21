@@ -80,6 +80,9 @@
 ## **📈 프로젝트 성과**
 ![image](https://github.com/user-attachments/assets/5ee40cd6-0dc0-47fd-aa3d-bc12b34a0743)
 
+- **캡스톤 백엔드 서버 레포지토리는 [여기](https://github.com/HBNU-SWUNIV/come-capstone24-Triplewave-Server)에서 볼 수 있습니다.**
+
+
 1. **2024 SW중심대학 우수작품 경진대회** 참가
 2. **대한전자공학회 2024년도 추계학술대회 Autumn Annual Conference of IEIE, 2024**
 
