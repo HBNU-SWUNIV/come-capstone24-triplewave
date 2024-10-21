@@ -1,100 +1,45 @@
-# TurtleBot3 Control and Navigation Codes
+# 🚀 로봇 제어 코드
 
-Welcome to the TurtleBot3 Control and Navigation Codes repository! This repository contains various codes and scripts to control and navigate TurtleBot3 robots efficiently using several modules like AMCL, marker recognition, movement control, navigation, and filtering.
+이 리포지토리는 **TurtleBot3** 패키지를 활용하여 구현된 로봇 제어 코드들을 포함하고 있습니다. 단, TurtleBot3 패키지 전체를 업로드하기에는 용량 제한이 있어, 아래 링크를 통해 해당 패키지를 설치하고 설정할 수 있습니다:
 
-## 📂 Repository Structure
-
-This repository is organized into different modules, each focusing on specific functionality for the TurtleBot3 robot:
-
-1. **AMCL (Adaptive Monte Carlo Localization)**: This module is responsible for localizing the robot in a known map using particle filtering techniques.
-2. **Marker Recognition**: Utilizes the camera sensor to detect and identify ArUco markers, enabling precise localization and interaction with environments like elevator buttons.
-3. **Movement Control**: Provides scripts to control the movement of the robot, including basic teleoperation, path planning, and obstacle avoidance.
-4. **Navigation**: Uses ROS Navigation Stack (DWA Planner, Move_base) for autonomous path planning and movement.
-5. **Various Filters**: Contains filtering mechanisms such as LiDAR data filtering to improve SLAM accuracy and reduce noise.
-
-## 🔗 TurtleBot3 Package
-
-The full TurtleBot3 package is not included in this repository due to its size. You can access and download the official TurtleBot3 packages using the following link:
-
-- [TurtleBot3 ROS Packages](https://github.com/ROBOTIS-GIT/turtlebot3)
-
-Please follow the instructions provided in the linked repository to set up the necessary packages before using the code in this repository.
-
-## ⚙️ Installation
-
-To set up and use the codes in this repository, follow the steps below:
-
-1. Clone this repository to your catkin workspace:
-    ```bash
-    git clone <repository-link> ~/catkin_ws/src/
-    ```
-2. Ensure you have the TurtleBot3 packages installed as mentioned above.
-3. Build your catkin workspace:
-    ```bash
-    cd ~/catkin_ws
-    catkin_make
-    ```
-4. Source your workspace:
-    ```bash
-    source ~/catkin_ws/devel/setup.bash
-    ```
-
-## 🛠 Modules Overview
-
-### 1. AMCL
-- **Description**: The AMCL module implements particle filtering to localize the TurtleBot3 within a known map. It is crucial for accurate navigation and path planning.
-- **Launch Command**: 
-    ```bash
-    roslaunch turtlebot3_navigation amcl.launch
-    ```
-
-### 2. Marker Recognition
-- **Description**: This module uses an Intel D455 camera and the ArUco marker library for detecting and recognizing specific markers. It assists in precise localization and robot manipulation tasks like pressing elevator buttons.
-- **Launch Command**: 
-    ```bash
-    roslaunch turtlebot3_marker_recognition marker_recognition.launch
-    ```
-
-### 3. Movement Control
-- **Description**: This module provides movement control functionalities, including teleoperation and autonomous movement through a predefined path.
-- **Launch Command**: 
-    ```bash
-    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-    ```
-
-### 4. Navigation
-- **Description**: The navigation module includes configurations for DWA Planner and Move_base for autonomous path planning, avoiding obstacles, and reaching target destinations.
-- **Launch Command**: 
-    ```bash
-    roslaunch turtlebot3_navigation move_base.launch
-    ```
-
-### 5. Various Filters
-- **Description**: Implements filtering techniques for LiDAR data to enhance SLAM accuracy by reducing noise and unwanted reflections from the environment.
-- **Launch Command**: 
-    ```bash
-    roslaunch turtlebot3_navigation laser_filter.launch
-    ```
-
-## 🚀 Getting Started
-
-To run the basic navigation with AMCL:
-1. Ensure that your TurtleBot3 is set up and powered on.
-2. Launch the AMCL and navigation module:
-    ```bash
-    roslaunch turtlebot3_navigation turtlebot3_navigation.launch
-    ```
-3. Use the movement control module or set a goal using RViz.
-
-## 📢 Notes
-- Make sure to adjust your environment variables like `TURTLEBOT3_MODEL` before launching.
-- For using the marker recognition module, ensure your camera is calibrated and the appropriate ROS package is set up.
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+🔗 [TurtleBot3 패키지 설치 링크](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
 ---
 
-Enjoy building and experimenting with TurtleBot3!
+## 📂 구성 코드
 
+리포지토리에는 다양한 로봇 제어 코드가 포함되어 있으며, 각각의 코드는 다음과 같은 기능을 수행합니다:
+
+1. **AMCL (Adaptive Monte Carlo Localization)**  
+   로봇의 위치를 추정하고 정확하게 파악하는 알고리즘으로, 실내 환경에서의 로봇 위치 인식을 위해 사용됩니다.
+
+2. **마커 인식 (ArUco)**  
+   로봇이 주어진 경로와 환경에서 **ArUco 마커**를 인식하여 정밀한 위치 제어 및 특정 작업을 수행할 수 있도록 합니다.
+
+3. **이동 제어**  
+   로봇의 기본적인 전진, 후진, 회전 등의 이동을 포함한 제어 코드로, 주행 경로를 따라 이동할 수 있도록 설계되었습니다.
+
+4. **네비게이션**  
+   **SLAM (Simultaneous Localization and Mapping)** 및 **DWA (Dynamic Window Approach)**를 기반으로 하여, 로봇이 장애물을 회피하면서 목적지까지 이동할 수 있는 기능을 구현합니다.
+
+5. **각종 필터**  
+   LiDAR 및 기타 센서로 수집된 데이터를 전처리하고 필터링하는 코드가 포함되어 있으며, 이는 노이즈를 줄이고 데이터의 정확도를 높이기 위한 목적입니다.
+
+---
+
+## 🛠️ 사용 방법
+
+1. **TurtleBot3** 패키지를 설치한 후, 각 코드 파일을 환경에 맞게 설정합니다.
+2. 필요한 `launch` 파일을 실행하여 원하는 제어 기능을 테스트하고 확인할 수 있습니다.
+3. 각 폴더에는 코드와 함께 `launch` 파일과 `config` 파일이 포함되어 있으니 이를 참고해 구성 및 실행을 진행하세요.
+
+---
+
+## 🔔 참고사항
+
+- 이 리포지토리는 **Jetson Orin Nano**와 **ROS Noetic** 환경에서 테스트되었습니다.
+- 각 코드에 대한 자세한 설명은 각 디렉토리 내부의 **README.md** 파일을 참고하세요.
+
+---
+
+🎉 **감사합니다!** 이 리포지토리가 여러분의 프로젝트에 도움이 되길 바랍니다! 😊
